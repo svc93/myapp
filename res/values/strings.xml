@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">myapp</string>
-    <string name="laInicio">Nombre</string>
-    <string name="laApellido">Apellido</string>
+    <string name="laInicio">Nombre:</string>
+    <string name="laApellido">Apellido:</string>
+    <string name="laDireccion">Dirección:</string>
 </resources>

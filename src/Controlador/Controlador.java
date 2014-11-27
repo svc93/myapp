@@ -3,6 +3,8 @@ package Controlador;
 import Modelo.Cliente;
 import android.content.Context;
 
+import java.util.ArrayList;
+
 /**
  * Created by willy on 26/11/2014.
  */
@@ -15,15 +17,18 @@ public class Controlador {
     }
 
     public int agregarNuevoCliente(){
-        int respuesta = modeloCliente.insertar();
-        return respuesta;
+        return modeloCliente.insertar();
     }
     public int actualizarCliente(){
-        int respuesta = modeloCliente.actualizar();
-        return respuesta;
+        return modeloCliente.actualizar();
     }
     public int eliminarCliente(){
-        int respuesta = modeloCliente.eliminar();
-        return respuesta;
+        return modeloCliente.eliminar();
+    }
+    public ClienteSetGet buscarCliente(){
+        return modeloCliente.buscarCliente();
+    }
+    public ArrayList<ClienteSetGet> todosClientes(){
+        return modeloCliente.leerClientes();
     }
 }

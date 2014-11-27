@@ -8,21 +8,66 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
-        <TextView
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/laInicio"
+                    android:id="@+id/textView" android:layout_gravity="center_horizontal|left" android:singleLine="false"
+                    />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtClienteNombre" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" android:id="@+id/linearLayout">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/laApellido"
+                      android:id="@+id/textView2" android:layout_gravity="center_horizontal|left" android:singleLine="false"
+                    />
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:id="@+id/txtClienteApellido" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" android:id="@+id/linearLayout2">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/laDireccion"
+                      android:id="@+id/textView3" android:layout_gravity="center_horizontal|left"
+                      android:singleLine="false" android:password="false"/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:id="@+id/txtClienteDireccion" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:weightSum="1">
+            <Button
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nuevo"
+                    android:id="@+id/btnClienteNuevo" android:layout_weight="0.46"/>
+            <Button android:layout_width="113dp" android:layout_height="wrap_content" android:text="Actualizar"
+                    android:id="@+id/btnClienteActualizar" android:layout_weight="0.20"/>
+            <Button android:layout_width="117dp" android:layout_height="wrap_content" android:text="Eliminar"
+                    android:id="@+id/btnClienteEliminar" android:layout_weight="0.20"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" android:weightSum="1" android:id="@+id/linearLayout3">
+            <Button android:layout_width="108dp" android:layout_height="wrap_content" android:text="anterior"
+                    android:id="@+id/btnClienteAnterior" android:layout_weight="0.58"/>
+            <Button android:layout_width="117dp" android:layout_height="wrap_content" android:text="siguiente"
+                    android:id="@+id/btnClienteSiguiente" android:layout_weight="0.37" android:singleLine="false"/>
+        </LinearLayout>
+        <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/laInicio"
-                android:id="@+id/textView" android:layout_gravity="center_horizontal" android:singleLine="false"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editText"/>
-        <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Guardar"
-                android:id="@+id/button"/>
+                android:text="Todos"
+                android:id="@+id/btnListview" android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 </LinearLayout>
 
